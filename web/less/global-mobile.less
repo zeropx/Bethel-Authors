@@ -1,0 +1,251 @@
+/* ===== Initializr Styles =====================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body{ font:16px/26px Arial, sans-serif; }
+
+body {
+  font-size: 62.5%;
+  text-transform: uppercase;  
+}
+
+.wrapper{
+}
+
+
+
+#header-container{ border-bottom: 20px solid @primary }
+#footer-container{ border-top:    20px solid @gray-3; }
+.main aside      { border-top:    20px solid @gray-3; }
+
+#header-container {
+  background: @primary;
+}
+
+#footer-container,
+.main aside{
+	background:@gray-2;
+}
+
+#title  { 
+  width: 143px;
+  height: 74px;
+  text-indent: 100%;
+  background: transparent url('../img/logo-small.png') no-repeat top left;
+  overflow: hidden;
+  	padding: 0;
+  	line-height: 1em;
+  	margin: 4.42% 0 25.42% 4.42%;
+}
+
+::-moz-selection { background: #D7B7EB; color: @gray-2; text-shadow: none; }
+::selection      { background: #D7B7EB; color: @gray-2; text-shadow: none; }
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+#navigation {
+  position: absolute;
+  top: 0;
+  right: 4.42%;
+  
+  
+  ul {
+    position: relative;
+    
+    &, li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: block;
+      float: left;
+      
+      a {
+        background: transparent url('../img/sprites.png') no-repeat top left;
+      	display: block;
+      	width: 60px;
+      	height: 140px;
+      	color:white;
+      	text-align:center;
+      	text-decoration:none;
+        text-transform: uppercase;
+      	font-weight:bold;
+        text-indent: 100%;
+        overflow: hidden;
+        
+        -webkit-transition: all .15s ease-in-out;
+           -moz-transition: all .15s ease-in-out;
+             -o-transition: all .15s ease-in-out;
+            -ms-transition: all .15s ease-in-out;
+                transition: all .15s ease-in-out;
+      	&:hover, &:visited{
+        	color:white;
+        }
+
+        &:hover, &.active {
+        	text-decoration:underline;
+          	height: 155px;
+      	}
+      	
+      	
+      }
+
+      &#kris a {
+        background-position: -60px 0;
+      }
+      
+      &#danny a {
+        background-position: -120px 0;
+      }
+      
+      
+      
+    }
+  }
+
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main-container {
+  .video {
+    padding: 0 4.42% 4.42% 4.42%;
+    background: @gray-1;
+    
+    .video-wrapper {
+      padding: 10px;
+      background: #FFF;
+      
+      .video-frame {
+        position: relative;
+        padding: 30px 0 56.25% 0;
+        margin: -5em 0 0 0;
+        height: 0;
+        overflow: hidden;
+
+        iframe, object, embed {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    
+  }
+}
+
+.call-out {
+  
+  background: @gray-3;
+  
+  h2 {
+    text-align: center;
+    margin: 0;
+    padding: 4% 15%;
+    color: @primary;
+    font-weight: normal;
+    
+  }
+}
+
+.main{
+	background: @gray-2;
+	
+  .products {
+    &, li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    li {
+      display: block;
+      position: relative;
+      margin-bottom: 10px;
+      
+      a {
+        display: block;
+        min-height: 152px;
+        color: #FFF;
+        text-decoration: none;
+        
+        &:hover {
+          h2 {
+            background: @gray-1;
+            color: @gray-3;
+            
+          }
+        }
+        
+        h2 {
+          margin: 45px 0 0 37%;
+          padding: 0;
+          background: @gray-3;
+          font-size: 1.3em;
+          font-weight: normal;
+          padding: 10px;
+          -webkit-transition: all .25s ease-in-out;
+             -moz-transition: all .25s ease-in-out;
+               -o-transition: all .25s ease-in-out;
+              -ms-transition: all .25s ease-in-out;
+                  transition: all .25s ease-in-out;
+        }
+        
+        img {
+          position: absolute;
+          top: 0;
+          left: 4.25%;
+        }
+        
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+#footer-container {
+  padding: 0;
+  border: none!important;
+  h3 {
+    color:white;
+  	padding:20px 0;
+  	margin: 0;
+  	text-align: center;
+  	font-weight: normal;
+  }
+  
+}
+
+
+
+
+.authors {
+  display: none;
+  
+  &.active {
+    display: block;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 #title{ padding-top:20px; }
+

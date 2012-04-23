@@ -1,0 +1,12 @@
+# Global/OSX.gitignore
+.DS_Store
+Icon?
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Global/TextMate.gitignore
+*.tmproj
+*.tmproject
+tmtags
